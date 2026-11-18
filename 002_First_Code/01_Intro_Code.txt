@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Namaste Duniya!\n"<<endl;
+    cout << "Regards,\nChirag"<<endl;
+    return 0;
+}
+
+
+Output:
+Namaste Duniya!
+
+Regards,
+Chirag

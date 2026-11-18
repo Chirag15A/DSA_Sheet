@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n = 10;
+    int i = 1;
+
+    while(i <= n){
+        double f = 9.00/5*i + 32;
+        cout<<"Celcius "<<i<<" : Fahrehniet "<<f<<endl;
+        i = i + 1;
+    }
+
+    return 0;
+}
+
+Output:
+Celcius 1 : Fahrehniet 33.8
+Celcius 2 : Fahrehniet 35.6
+Celcius 3 : Fahrehniet 37.4
+Celcius 4 : Fahrehniet 39.2
+Celcius 5 : Fahrehniet 41
+Celcius 6 : Fahrehniet 42.8
+Celcius 7 : Fahrehniet 44.6
+Celcius 8 : Fahrehniet 46.4
+Celcius 9 : Fahrehniet 48.2
+Celcius 10 : Fahrehniet 50

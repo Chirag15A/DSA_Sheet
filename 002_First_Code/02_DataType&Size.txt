@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5;
+    // Variable of int data type of size 4
+    cout<<a<<" : "<<sizeof(a)<<endl;
+
+    bool c = 'a';
+    // Variable of char data type
+    cout<<c<<" : "<<sizeof(c)<<endl;
+
+    bool b = true;
+    // Variable of bool data type 
+    cout<<b<<" : "<<sizeof(b)<<endl;
+
+    float f = 5.1;
+    // Variable of float data type 
+    cout<<f<<" : "<<sizeof(f)<<endl;
+
+    double d = 5.12;
+    // Variable of double data type 
+    cout<<d<<" : "<<sizeof(d)<<endl;
+    
+    return 0;
+}
+
+Output:
+5 : 4
+1 : 1
+1 : 1
+5.1 : 4
+5.12 : 8

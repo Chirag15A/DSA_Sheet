@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n = 5, m = 5;
+
+    for(int i = 1, j = 1; i <= n && j <= m; i++, j= j + 2){
+        cout<<i*j<<endl;
+    }
+    
+    return 0;
+}
+
+Output:
+1
+6
+15

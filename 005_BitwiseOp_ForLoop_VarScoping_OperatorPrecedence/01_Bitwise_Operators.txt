@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 5, b = 3;
+
+    //OR (ONLY 0 | 0 = 0)
+    // 5 = 101, 3 = 011, 5 | 3 = 7 (111)
+    cout<<"a|b : "<< (a|b) <<endl;
+
+    //AND (ONLY 1 & 1 = 1)
+    // 5 = 101, 3 = 011, 5 & 3 = 1 (001)
+    cout<<"a&b : "<< (a&b) <<endl;
+
+    //XOR (0 ^ 0 = 0 AND 1 ^ 1 = 0)
+    // 5 = 101, 3 = 011, 5 ^ 3 = 6 (110)
+    cout<<"a^b : "<< (a^b) <<endl;
+
+    //NOT (~0 = 1 AND VICE VERSA)
+    cout<<"~a : "<< (~a) <<endl;
+
+    //LEFT SHIFT (MOSTLY * 2)
+    // <<2 - doubled 2 times
+    cout<<"a << 2 : "<< (a << 2) <<endl; //sometime create -ve number
+
+    //Right shift
+    cout<<"a >> 2 : "<< (a >> 2) <<endl;
+    return 0;
+}
+
+Output:
+a|b : 7
+a&b : 1
+a^b : 6
+~a : -6
+a << 2 : 20
+a >> 2 : 1

@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 5, b = 3;
+
+    //Post Increment
+    cout<<a++<<endl; //print 5 and become 6
+    //Pre Increment
+    cout<<++a<<endl; //increment and become 7 and print
+    //Post Decrement
+    cout<<a--<<endl; // print 7 and become 6
+    //Pre Decrement
+    cout<<--a<<endl; // reduced from 6 to 5 and print
+    return 0;
+}
+
+Output:
+5
+7
+7
+5

@@ -1,0 +1,27 @@
+05_Reverse_Array
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void reverseArray(int arr[], int n){
+    for(int i = 0; i < n/2; i++){
+        int temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i  - 1] = temp;
+    }
+}
+
+int main() {
+    int arr[5];
+    for(int i = 0; i < 5; i++) cin>>arr[i];
+
+    cout<<"Reverse Array: ";
+    reverseArray(arr, 5);
+
+    for(int i = 0; i < 5; i++) cout<<arr[i]<<"\t";
+}
+
+
+Console:
+5 6 1 2 4
+Reverse Array: 4	2	1	6	5	

@@ -1,0 +1,35 @@
+02_Min_nd_Max_in_Array
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int getMax(int arr[], int n){
+    int val = INT_MIN;
+    for(int i = 0; i < n; i++){
+        if(val < arr[i]) val = arr[i];
+    }
+    return val;
+}
+
+int getMin(int arr[], int n){
+    int val = INT_MAX;
+    for(int i = 0; i < n; i++){
+        if(val > arr[i]) val = arr[i];
+    }
+    return val;
+}
+
+int main() {
+    int arr[5] = {1, 7, 3, 0, 2};
+
+    int max_element = getMax(arr, 5);
+    cout<<"Maximum element in array is: "<<max_element<<endl;
+    
+    int min_element = getMin(arr, 5);
+    cout<<"Minimum element in array is: "<<min_element<<endl;
+}
+
+
+Console:
+Maximum element in array is: 7
+Minimum element in array is: 0

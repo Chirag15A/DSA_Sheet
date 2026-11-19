@@ -1,0 +1,72 @@
+#include <iostream>
+using namespace std;
+
+void printArray(int arr[100], int n){
+    for(int i = 0; i < n; i++){
+        cout<<arr[i]<<"\t";
+    }
+    cout<<endl;
+}
+
+int main() {
+
+    int arr1[5] = {1, 2, 3, 4, 5};
+    int arr2[5] = {0};
+    int arr3[5];
+    int arr4[10] = {1, 2};
+
+    cout<<"arr1 -> accessing element at 3rd position and 2nd index: "<<arr1[2]<<endl;
+    cout<<"arr2 -> all elements are 0: "<<arr2[2]<<endl;
+    cout<<"arr3 -> all elements have garbage values: "<<arr3[2]<<endl;
+    cout<<"arr4 -> First 2 values are given, others are 0: "<<arr4[2]<<endl;
+
+    //print all elements in the array
+    cout<<endl<<"Printing arr1"<<endl;
+    printArray(arr1, 5);
+    cout<<endl<<"Printing arr2"<<endl;
+    printArray(arr2, 5);
+    cout<<endl<<"Printing arr3"<<endl;
+    printArray(arr3, 5);
+    cout<<endl<<"Printing arr4"<<endl;
+    printArray(arr4, 10);
+
+    //Using sizeof
+    cout<<endl<<"Size of arr1 is: "<<sizeof(arr1)<<endl;
+    cout<<endl<<"Size of arr2 is: "<<sizeof(arr2)<<endl;
+    cout<<endl<<"Size of arr3 is: "<<sizeof(arr3)<<endl;
+    cout<<endl<<"Size of arr4 is: "<<sizeof(arr4)<<endl;
+
+    //get size of array
+    cout<<endl<<"Number of elements that can be stored in arr1: "<<sizeof(arr1)/sizeof(int)<<endl;
+    
+    
+    return 0;
+}
+
+Console:
+arr1 -> accessing element at 3rd position and 2nd index: 3
+arr2 -> all elements are 0: 0
+arr3 -> all elements have garbage values: -302355360
+arr4 -> First 2 values are given, others are 0: 0
+
+Printing arr1
+1	2	3	4	5	
+
+Printing arr2
+0	0	0	0	0	
+
+Printing arr3
+1600677166	1819242352	-302355360	32078	4607	
+
+Printing arr4
+1	2	0	0	0	0	0	0	0	0	
+
+Size of arr1 is: 20
+
+Size of arr2 is: 20
+
+Size of arr3 is: 20
+
+Size of arr4 is: 40
+
+Number of elements that can be stored in arr1: 5

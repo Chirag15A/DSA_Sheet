@@ -1,0 +1,42 @@
+01_Switch_Case	
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    cin>>n;
+
+    switch(n){
+        case 1:
+            cout<<"Day 1 is Monday"<<endl;
+            break;
+        case 2:
+            cout<<"Day 2 is Tuesday"<<endl;
+            break;
+        case 3:
+            cout<<"Day 3 is Wednesday"<<endl;
+            break;
+        case 4:
+            cout<<"Day 4 is Thursday"<<endl;
+            break;
+        case 5:
+            cout<<"Day 5 is Friday"<<endl;
+            break;
+        case 6:
+            cout<<"Day 6 is Saturday"<<endl;
+            break;
+        case 7:
+            cout<<"Day 7 is Sunday"<<endl;
+            break;
+        default:
+            cout<<"There are only 7 days a week"<<endl;
+    }
+    
+    return 0;
+}
+
+Console:
+10
+There are only 7 days a week

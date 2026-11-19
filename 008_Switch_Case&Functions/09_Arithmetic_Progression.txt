@@ -1,0 +1,22 @@
+09_Arithmetic_Progression
+
+#include <iostream>
+using namespace std;
+
+int arithmeticProgression(int n){
+    return 3*n+7;
+}
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+
+    cout<<"nth term is: "<<arithmeticProgression(n);
+    
+    return 0;
+}
+
+Console:
+Enter n: 7
+nth term is: 28

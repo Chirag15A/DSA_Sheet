@@ -1,0 +1,42 @@
+02_Create_Calculator
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a;
+    cin>>a;
+    int b;
+    cin>>b;
+    char op;
+    cin>>op;
+
+    switch(op){
+        case '+':
+            cout<<a<<"+"<<b<<"="<<a+b<<endl;
+            break;
+        case '-':
+            cout<<a<<"-"<<b<<"="<<a-b<<endl;
+            break;
+        case '*':
+            cout<<a<<"*"<<b<<"="<<a*b<<endl;
+            break;
+        case '/':
+            cout<<a<<"/"<<b<<"="<<a/b<<endl;
+            break;
+        case '%':
+            cout<<a<<"%"<<b<<"="<<a%b<<endl;
+            break;
+        default:
+            cout<<"Not a valid operation!"<<endl;
+    }
+    
+    return 0;
+}
+
+Console:
+5
+3
+*
+5*3=15

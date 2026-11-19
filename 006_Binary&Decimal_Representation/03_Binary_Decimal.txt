@@ -1,0 +1,28 @@
+03_Binary_Decimal
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+
+    int i = 0, ans = 0;
+    while(n != 0){
+        int r = n % 10;
+
+        ans = ans + pow(2, i++)*r;
+
+        n = n / 10;
+        
+    }
+
+    cout << "Answer is: " << ans << endl;
+}
+
+
+Output:
+Enter n: 1010
+Answer is: 10

@@ -1,0 +1,26 @@
+03_Power_Of2
+
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        if(n <= 0) return false;
+        int i = 0;
+        while(n > 0){
+            int bit = (n & 1);
+            if(bit) i++;
+            n = n >> 1;
+        }
+        if(i > 1) return false;
+        return true;
+    }
+};
+
+Console:
+
+Input
+n =
+1
+Output
+true
+Expected
+true
